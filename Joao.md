@@ -1,1 +1,0 @@
-Mi color favorito es el verde.
