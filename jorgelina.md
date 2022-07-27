@@ -1,1 +1,0 @@
-Mi color Favorito es el Fucsia
