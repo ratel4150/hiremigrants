@@ -1,26 +1,68 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 const cors = require("cors");
-
-// initializing express application
 const app = express();
-// parse requests of content-type - application/json
-app.use(express.json());
 
-const corsOptions = {
-  origin: "http://localhost:3000"
+var corsOptions = {
+  origin: "http://localhost:8081"
 };
-app.use(cors(corsOptions));  // enable CORS
+app.use(cors(corsOptions));
+// parse requests of content-type - application/json
+app.use(bodyParser.json());
+// parse requests of content-type - application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: true }));
+const db = require("./app/models");
+const Role = db.role;
+db.sequelize.sync({force: true}).then(() => {
+  console.log('Drop and Resync Db');
+  initial();
+});
+
+
 
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome HireMigrants" });
+  res.json({ message: "Welcome to hiremigrants application." });
 });
 
+app.get("/iniciarsesion", function (request, response) {
+  //me dirige a la ruta del index.html
+  response.sendFile(__dirname + "/index.html");
+});
+
+
+// routes
+require('./app/routes/auth.routes')(app);
+require('./app/routes/user.routes')(app);
+// set port, listen for requests
 
 
 // set port, listen for requests
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
+
+
+function initial() {
+  Role.create({
+    id: 1,
+    name: "candidato"
+  });
+ 
+  Role.create({
+    id: 2,
+    name: "empresa"
+  });
+
+  Role.create({
+    id: 3,
+    name: "reclutador"
+  });
+ 
+  Role.create({
+    id: 4,
+    name: "admin"
+  });
+}
