@@ -23,7 +23,7 @@ function Footer() {
         />
         <Card.Title>Migracode Project 2022</Card.Title>
         <Card.Text>
-          Produced by Vanessa Marin - Joao Albitrez - Yhenifer Pulido - Arturo -
+          Produced by Vanessa Marin - Joao Albitrez - Yhenifer Pulido - Arturo Chavez -
           Jorgelina Donquis.
         </Card.Text>
         <Card.Img
