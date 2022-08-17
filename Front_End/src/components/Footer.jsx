@@ -1,51 +1,39 @@
 import React from "react";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 
 function Footer() {
   return (
-    <div>
-      <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <p class="col-md-4 mb-0 text-muted">© 2022 Company, Inc</p>
-
-          <a
-            href="/"
-            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
-          >
-            <svg class="bi me-2" width="40" height="32">
-              {/* <use xlink:href="#bootstrap"></use> */}
-            </svg>
-          </a>
-
-          <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted">
-                Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted">
-                Features
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted">
-                Pricing
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted">
-                FAQs
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted">
-                About
-              </a>
-            </li>
-          </ul>
-        </footer>
-      </div>
-    </div>
+    <Card className="text-center bg-dark text-white">
+      <Card.Header>
+        <Button variant="dark" size="sm" href="">
+          Migrants
+        </Button>
+        <Button variant="dark" size="sm" href="">
+          Company
+        </Button>
+        <Button variant="dark" size="sm" href="">
+          Login
+        </Button>
+        </Card.Header>
+      <Card.Body>
+        <Card.Img
+          src="https://migracode.openculturalcenter.org/wp-content/uploads/2020/10/Migracode-Barcelona-Logo-Transparant.png"
+          style={{ width: "120px" }}
+        />
+        <Card.Title>Migracode Project 2022</Card.Title>
+        <Card.Text>
+          Produced by Vanessa Marin - Joao Albitrez - Yhenifer Pulido - Arturo -
+          Jorgelina Donquis.
+        </Card.Text>
+        <Card.Img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV44X3CbM2TFxZaT3-TXkh-kbIkzCVi0umuA&usqp=CAU"
+          style={{ width: "150px" }}
+        />
+      </Card.Body>
+    </Card>
   );
 }
+
 export default Footer;
+
