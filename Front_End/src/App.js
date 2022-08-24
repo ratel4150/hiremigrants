@@ -1,18 +1,20 @@
-import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Body from "./components/Body";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import Body from './components/Body/BannerSearch';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import FormCompany from './components/Forms/FormCompany';
+import Login from './components/Forms/Login';
 import Card from "./components/Migrants/Card";
-
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Body />
+      <Header/>
+      <Body/>
       <Card />
-      <Footer />
+      <FormCompany/>
+      <Login/>
+      <Footer/>
     </div>
   );
 }
