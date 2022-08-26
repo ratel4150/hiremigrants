@@ -5,6 +5,7 @@ import Header from './components/Header';
 import FormCompany from './components/Forms/FormCompany';
 import Login from './components/Forms/Login';
 import Card from "./components/Migrants/Card";
+import BannerCompany from './components/Body/Forms/BannerCompany';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Body/>
       <Card />
       <FormCompany/>
+      <BannerCompany/>
       <Login/>
       <Footer/>
     </div>
