@@ -6,11 +6,12 @@ import FormCompany from './components/Forms/FormCompany';
 import Login from './components/Forms/Login';
 import Card from "./components/Migrants/Card";
 import BannerCompany from './components/Body/Forms/BannerCompany';
+import NavBar from './components/Body/Forms/NavBar';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <NavBar/>
       <Body/>
       <Card />
       <BannerCompany/>
