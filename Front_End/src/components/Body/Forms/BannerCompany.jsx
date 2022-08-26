@@ -1,8 +1,8 @@
 import React from 'react'
-
+import image from '../../../Photos/Migrants/tras.png'
 function BannerCompany() {
   return (
-    <div className='container-fluid colorazul text-white d-inline-flex'>
+    <div className='container-fluid text-white d-inline-flex' style={{backgroundColor:'#0d3878'}}>
     <div className='container d-flex justify-content-center p-5'>
         <img src={image} alt="" width='100%'/>
     </div>
@@ -20,7 +20,7 @@ function BannerCompany() {
         </div>
         <div className='container d-flex justify-content-center'>
         
-        <button type="button" class="btn btn-light">Encontrar candidatos</button>
+        <button type="button" class="btn text-white " style={{backgroundColor:'#A73C00'}}>Encontrar candidatos</button>
 
         </div>
         <div className='container '>

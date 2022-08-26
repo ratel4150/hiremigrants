@@ -13,8 +13,9 @@ function App() {
       <Header/>
       <Body/>
       <Card />
-      <FormCompany/>
       <BannerCompany/>
+      <FormCompany/>
+      
       <Login/>
       <Footer/>
     </div>
