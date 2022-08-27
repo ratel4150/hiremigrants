@@ -7,17 +7,21 @@ import Login from './components/Forms/Login';
 import Card from "./components/Migrants/Card";
 import BannerCompany from './components/Body/Forms/BannerCompany';
 import NavBar from './components/Body/Forms/NavBar';
+import BannerWorkPosition from './components/Body/BannerWorkPosition';
 
 function App() {
   return (
     <div className="App">
       <NavBar/>
       <Body/>
-      <Card />
-      <BannerCompany/>
-      <FormCompany/>
       
-      <Login/>
+      <BannerWorkPosition/>
+      <BannerCompany/>
+      
+      <Card />
+      {/* <FormCompany/> */}
+      
+      {/* <Login/> */}
       <Footer/>
     </div>
   );
