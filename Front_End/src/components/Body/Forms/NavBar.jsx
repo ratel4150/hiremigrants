@@ -3,20 +3,23 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 import Logo from "../../../Photos/Migrants/Logo/logo.png";
-
+import { Link } from "react-router-dom";
 import "@fontsource/roboto";
 import "@fontsource/league-spartan";
 
 import { ImUserTie } from "react-icons/im";
 import { RiBuilding2Fill } from "react-icons/ri";
 import { TbDoorEnter } from "react-icons/tb";
-
 function NavBar() {
   return (
-    <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand
-          href="#home"
+    <Navbar
+      
+      style={{ backgroundColor: "white", height: "100%" }}
+      expand="lg"
+    >
+      <Container fluid>
+        <Navbar.Brand as={Link} to='home'
+          
           className="display-1"
           style={{
             fontFamily: "League Spartan",
@@ -39,30 +42,30 @@ function NavBar() {
             <div className="container-fluid d-inline-flex">
               <div className="" style={{ width: "80%" }}></div>
 
-              <Nav.Link href="#home"></Nav.Link>
+              
 
-              <Nav.Link href="#link" style={{ fontFamily: "Roboto" }}>
+              <Nav.Link as={Link} to='migrants' style={{ fontFamily: "Roboto" }}>
                 <button
                   type="button"
-                  class="btn btn-primary d-inline-flex btn-lg rounded-pill"
+                  className="btn btn-primary d-inline-flex btn-lg rounded-pill"
                   style={{ backgroundColor: "#0D3878" }}
                 >
                   Migrants <ImUserTie size={24} />
                 </button>
               </Nav.Link>
-              <Nav.Link href="#link" style={{ fontFamily: "Roboto" }}>
+              <Nav.Link as={Link} to="company" style={{ fontFamily: "Roboto" }}>
                 <button
                   type="button"
-                  class="btn btn-warning d-inline-flex btn-lg rounded-pill text-white"
+                  className="btn btn-warning d-inline-flex btn-lg rounded-pill text-white"
                   style={{ backgroundColor: "#FF5B00" }}
                 >
                   Company <RiBuilding2Fill size={24} />
                 </button>
               </Nav.Link>
-              <Nav.Link href="#link" style={{ fontFamily: "Roboto" }}>
+              <Nav.Link as={Link} to="login" style={{ fontFamily: "Roboto" }}>
                 <button
                   type="button"
-                  class="btn btn-outline-primary d-inline-flex btn-lg rounded-pill "
+                  className="btn btn-outline-primary d-inline-flex btn-lg rounded-pill "
                 >
                   LogIn
                   <TbDoorEnter size={24} />
