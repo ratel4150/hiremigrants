@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 
 function Header() {
   return (
     <div>
-      <header class="p-3 text-bg-dark">
+      <header class="p-3 text-bg-light">
         <div class="container">
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a
               href="/"
-              class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+              class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none"
             >
               <svg
                 class="bi me-2"
@@ -28,22 +28,22 @@ function Header() {
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-link px-2 text-white">
+                <a href="#" class="nav-link px-2 text-dark">
                   Features
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-link px-2 text-white">
+                <a href="#" class="nav-link px-2 text-dark">
                   Pricing
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-link px-2 text-white">
+                <a href="#" class="nav-link px-2 text-dark">
                   FAQs
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-link px-2 text-white">
+                <a href="#" class="nav-link px-2 text-dark">
                   About
                 </a>
               </li>
