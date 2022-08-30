@@ -1,6 +1,10 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import { BsInstagram } from "react-icons/bs";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaTwitterSquare } from "react-icons/fa";
+import { BsLinkedin } from "react-icons/bs"
 
 function Footer() {
   return (
@@ -26,10 +30,10 @@ function Footer() {
           Produced by Vanessa Marin - Joao Albitrez - Yhenifer Pulido - Arturo Chavez -
           Jorgelina Donquis.
         </Card.Text>
-        <Card.Img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV44X3CbM2TFxZaT3-TXkh-kbIkzCVi0umuA&usqp=CAU"
-          style={{ width: "150px" }}
-        />
+         < FaFacebookSquare />
+         < BsInstagram />
+         < FaTwitterSquare />
+         < BsLinkedin />
       </Card.Body>
     </Card>
   );
