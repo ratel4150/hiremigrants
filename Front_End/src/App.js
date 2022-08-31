@@ -1,7 +1,7 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
 import Body from './components/Body/Body';
-import Company from './components/Company';
+
 import CompanyParteII from './components/CompanyParteII';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -20,11 +20,17 @@ import Login from "./pages/Login"
 function App() {
   return (
     <div className="App">
-
-      <Header/>
-      <Body/>
-      <CompanyParteII/>
-      <Footer/>
+ <NavBar/>
+      <Routes>
+                  
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/migrants" element={<Migrants/>} />
+                    
+          <Route path="/company" element={<Company />} />
+          <Route path="/login" element={<Login/>} />
+                         
+        </Routes>
 
     </div>
   );
