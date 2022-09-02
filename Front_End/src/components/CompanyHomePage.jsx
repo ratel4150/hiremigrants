@@ -9,7 +9,7 @@ function CompanyHomePage() {
         backgroundColor: "#0D3878",
       }}
     >
-      <div className="container d-flex justify-content-center p-5"></div>
+      <div className="container d-flex justify-content-center p-3"></div>
       <div className="container p-4">
         <div className="container m-4">
           <h1
@@ -45,26 +45,7 @@ function CompanyHomePage() {
           </button>
         </div>
 
-        <div className="container-fluid text-white d-inline-flex">
-          <div>
-          <h4
-            className="display-4 d-flex justify-content-center fw p-5"
-            style={{ fontFamily: "League Spartan" }}
-          >
-            <strong>
-              Las empresas multiculturales crecen alrededor del 42%
-             más, y tienen una rentabilidad superior al 36%{" "}
-            </strong>
-          </h4>
-          <p className="display-6 d-flex justify-content-center fw">
-            Accede a cientos de personas que buscan trabajo
-           y encuentra a tu empleado ideal.
-          </p>
-          </div>
-          <div>
-            <img src="https://r.mobirisesite.com/239652/assets/images/mira-c1-3-612x408.png?v=1OnHG5" alt="" />
-          </div>
-        </div>
+        
       </div>
     </div>
   );
