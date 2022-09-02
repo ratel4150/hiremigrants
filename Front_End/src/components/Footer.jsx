@@ -1,39 +1,39 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
+import { BsInstagram } from "react-icons/bs";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaTwitterSquare } from "react-icons/fa";
+import { BsLinkedin } from "react-icons/bs"
 
 function Footer() {
   return (
-    <Card className="text-center bg-dark text-white">
-      <Card.Header>
-        <Button variant="dark" size="sm" href="">
-          Migrants
-        </Button>
-        <Button variant="dark" size="sm" href="">
-          Company
-        </Button>
-        <Button variant="dark" size="sm" href="">
-          Login
-        </Button>
-        </Card.Header>
-      <Card.Body>
-        <Card.Img
+    <div className="text-center text-white" style={{
+      backgroundColor: "#369962",
+    }}>
+      <div class="btn-group p-3" role="group" aria-label="Basic example">
+  <button type="button" class="btn text-white" style={{
+      backgroundColor: "#369962"}}>Migrants</button>
+  <button type="button" class="btn text-white" style={{
+      backgroundColor: "#369962"}}>Company</button>
+  <button type="button" class="btn text-white" style={{
+      backgroundColor: "#369962"}}>Login</button>
+</div>
+      <div>
+        <img
           src="https://migracode.openculturalcenter.org/wp-content/uploads/2020/10/Migracode-Barcelona-Logo-Transparant.png"
           style={{ width: "120px" }}
         />
-        <Card.Title>Migracode Project 2022</Card.Title>
-        <Card.Text>
+        <div className="p-2">Migracode Project 2022</div>
+        <div className="p-2">
           Produced by Vanessa Marin - Joao Albitrez - Yhenifer Pulido - Arturo Chavez -
           Jorgelina Donquis.
-        </Card.Text>
-        <Card.Img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV44X3CbM2TFxZaT3-TXkh-kbIkzCVi0umuA&usqp=CAU"
-          style={{ width: "150px" }}
-        />
-      </Card.Body>
-    </Card>
+        </div>
+         < FaFacebookSquare size={25} style={{marginLeft: "10"}}/>
+         < BsInstagram size={25} style={{marginLeft: "10"}}/>
+         < FaTwitterSquare size={25} style={{marginLeft: "10"}}/>
+         < BsLinkedin size={25} style={{marginLeft: "10"}}/>
+      </div>
+    </div>
   );
 }
 
 export default Footer;
-
