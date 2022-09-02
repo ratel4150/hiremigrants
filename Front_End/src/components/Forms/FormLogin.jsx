@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
-function Login() {
+function FormLogin() {
   return (
     <div class="container justify-content-center " 
     style={{
@@ -46,6 +46,6 @@ function Login() {
   );
 }
 
-export default Login;
+export default FormLogin;
 
 //ReactDOM.findDOMNode(ref)//
