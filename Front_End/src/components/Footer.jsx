@@ -27,10 +27,10 @@ function Footer() {
           Produced by Vanessa Marin - Joao Albitrez - Yhenifer Pulido - Arturo Chavez -
           Jorgelina Donquis.
         </div>
-         < FaFacebookSquare />
-         < BsInstagram />
-         < FaTwitterSquare />
-         < BsLinkedin />
+         < FaFacebookSquare size={25} style={{marginLeft: "10"}}/>
+         < BsInstagram size={25} style={{marginLeft: "10"}}/>
+         < FaTwitterSquare size={25} style={{marginLeft: "10"}}/>
+         < BsLinkedin size={25} style={{marginLeft: "10"}}/>
       </div>
     </div>
   );
