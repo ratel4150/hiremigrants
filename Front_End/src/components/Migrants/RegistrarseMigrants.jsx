@@ -1,4 +1,6 @@
 import React from "react";
+import chicaRubia from "../Images/chicaRubia.png"
+
 
 function RegistrarseMigrants () {
   return (
@@ -40,8 +42,8 @@ function RegistrarseMigrants () {
           </ul>
         </div>
         <div>
-          <img
-            src="https://r.mobirisesite.com/239652/assets/images/mira-c1-3-612x408.png?v=1OnHG5"
+          <img className="img-fluid"
+            src={chicaRubia}
             alt=""
             width={"600px"}
           />
