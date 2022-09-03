@@ -2,7 +2,7 @@ import React from 'react'
 import Banner from '../components/Body/Banner'
 import BannerWorkPosition from '../components/Body/BannerWorkPosition'
 import BannerCompany from '../components/Body/Forms/BannerCompany'
-import Card from '../components/Body/CardMigrant'
+import CardMigrant from '../components/Migrants/CardMigrant'
 
 function Home() {
   return (
@@ -10,7 +10,7 @@ function Home() {
         <Banner/>
         <BannerWorkPosition/>
         <BannerCompany/>
-        <Card/>
+        <CardMigrant/>
     </div>
   )
 }
