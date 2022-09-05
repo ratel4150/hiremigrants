@@ -10,7 +10,7 @@ app.use(cors(corsOptions));
 // parse requests of content-type - application/json
 app.use(bodyParser.json());
 // parse requests of content-type - application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
 const db = require("./app/models");
 const Role = db.role;
 db.sequelize.sync({force: true}).then(() => {
@@ -48,7 +48,7 @@ app.listen(PORT, () => {
 function initial() {
   Role.create({
     id: 1,
-    name: "candidato"
+    name: "user"
   });
  
   Role.create({

@@ -1,8 +1,11 @@
 import React from 'react'
+import FormJob from '../components/Forms/FormJob'
 
 function FormJobPost() {
   return (
-    <div>FormJobPost</div>
+    <div>
+      <FormJob/>
+      </div>
   )
 }
 
