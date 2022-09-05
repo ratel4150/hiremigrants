@@ -1,8 +1,13 @@
 import React from 'react'
+import AccedeCompany from '../components/Migrants/AccedeCompany'
+import RegistrarseCompany from '../components/Migrants/RegistrarseCompany'
 
 function SingUpCompany() {
   return (
-    <div>SingUpCompany</div>
+    <div>
+        <AccedeCompany/>
+        <RegistrarseCompany/>
+    </div>
   )
 }
 

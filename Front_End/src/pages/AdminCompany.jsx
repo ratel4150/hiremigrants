@@ -2,7 +2,9 @@ import React from 'react'
 
 function AdminCompany() {
   return (
-    <div>AdminCompany</div>
+    <div>
+        AdminCompany
+    </div>
   )
 }
 

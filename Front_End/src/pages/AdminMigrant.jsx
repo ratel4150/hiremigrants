@@ -2,7 +2,9 @@ import React from 'react'
 
 function AdminMigrant() {
   return (
-    <div>AdminMigrant</div>
+    <div>
+        AdminMigrant
+    </div>
   )
 }
 

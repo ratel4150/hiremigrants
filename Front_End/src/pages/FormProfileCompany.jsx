@@ -1,8 +1,11 @@
 import React from 'react'
+import FormCompany from '../components/Forms/FormCompany'
 
 function FormProfileCompany() {
   return (
-    <div>FormProfileCompany</div>
+    <div>
+        <FormCompany/>
+    </div>
   )
 }
 
