@@ -18,16 +18,16 @@ function BannerMigrants() {
       }}
     >
       <Card.Body>
-        <p class="h2" style={{ fontSize: 60, lineHeight: 1.1 }}>
+        <p class="h2" style={{ fontSize: 60, lineHeight: 1.1}}>
           <strong>
             <p>Encuentra empleo en las empresas</p>
             <p>más interesantes de España</p>
           </strong>
         </p>
-        <p class="h5">
+        <p class="h5" style={{ padding: "20px" }}>
           <p>Ahora el empleo lo eliges tú, más de 105.798 ofertas</p>
         </p>
-        <div class="mbr-section-btn mt-3">
+        <div class="mbr-section-btn mt-3" style={{ padding: "20px" }}>
           <button
             type="button"
             className="btn btn-warning d-inline-flex btn-lg rounded-pill text-white border-white"

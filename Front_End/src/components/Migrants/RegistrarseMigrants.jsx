@@ -1,8 +1,7 @@
 import React from "react";
-import chicaRubia from "../Images/chicaRubia.png"
+import chicaRubia from "../Images/chicaRubia.png";
 
-
-function RegistrarseMigrants () {
+function RegistrarseMigrants() {
   return (
     <div
       className="container-fluid text-white text-center p-3"
@@ -24,29 +23,38 @@ function RegistrarseMigrants () {
           >
             Muestra a las empresas todo tu talento
           </h5>
-          <ul className="display-6 list-group list-group-flush p-4"
-            style={{ fontFamily: "League Spartan",
-            }}>
-            <li className="list-group-item text-white"
-            style={{
-                backgroundColor: "#369962", 
-            }}>Crea tu CV </li>
-            <li className="list-group-item text-white"
-            style={{
-                backgroundColor: "#369962", 
-            }}>Inscríbete en las ofertas que te gustan</li>
-            <li className="list-group-item text-white"
-            style={{
-                backgroundColor: "#369962", 
-            }}>Mantén actualizado tu CV</li>
+          <ul
+            className="display-6 list-group list-group-flush p-4"
+            style={{ fontFamily: "League Spartan" }}
+          >
+            <li
+              className="list-group-item text-white"
+              style={{
+                backgroundColor: "#369962",
+              }}
+            >
+              Crea tu CV{" "}
+            </li>
+            <li
+              className="list-group-item text-white"
+              style={{
+                backgroundColor: "#369962",
+              }}
+            >
+              Inscríbete en las ofertas que te gustan
+            </li>
+            <li
+              className="list-group-item text-white"
+              style={{
+                backgroundColor: "#369962",
+              }}
+            >
+              Mantén actualizado tu CV
+            </li>
           </ul>
         </div>
-        <div>
-          <img className="img-fluid"
-            src={chicaRubia}
-            alt=""
-            width={"600px"}
-          />
+        <div style={{ alignSelf: "center"}}>  
+          <img className="img-fluid" src={chicaRubia} alt="chicaRubia" height={"600px"} />
         </div>
       </div>
       <div className="container d-flex justify-content-center">
@@ -62,5 +70,4 @@ function RegistrarseMigrants () {
   );
 }
 
-export default RegistrarseMigrants
-;
+export default RegistrarseMigrants;

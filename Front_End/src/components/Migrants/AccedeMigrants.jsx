@@ -5,7 +5,7 @@ function AccedeMigrants () {
     <div
       className="container-fluid text-white text-center p-3"
       style={{
-        backgroundColor: "#369962",
+        backgroundColor: "#0d3878",
       }}
     >
       <div className="container-fluid text-white justify-content-center">
@@ -25,8 +25,8 @@ function AccedeMigrants () {
         </p>
       </div>
       <div
-        className="container d-flex justify-content-center p-5 rounded"
-        style={{ backgroundColor: "white" }}
+        className="container d-flex justify-content-center rounded"
+        style={{ padding: "20px" }}
       >
         <div class="row">
           <div class="col">
@@ -41,7 +41,7 @@ function AccedeMigrants () {
             <input
               type="text"
               class="form-control"
-              placeholder="Email"
+              placeholder="Password"
               aria-label="Email"
             />
           </div>
@@ -49,7 +49,7 @@ function AccedeMigrants () {
             <button
               type="submit"
               className="btn btn-lg rounded fw-bold"
-              style={{ backgroundColor: "#0d3878", color: "white" }}
+              style={{ backgroundColor: "#0d3878", color: "white", borderColor: "white" }}
             >
               Iniciar sesión
             </button>
