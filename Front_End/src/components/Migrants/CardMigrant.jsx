@@ -27,7 +27,7 @@ function CardMigrant() {
         </div>
 
 
-<Row xs={1} md={2} className="g-1">  
+<Row xs={1} md={2} className="g-1" style={{justifyContent: "center"}}>  
       <Card class= "wrap" border="light" style={{ width: '25rem' }}>
         <Card.Img class= "wrap" variant="top" src= {Migrant1} />
         <Card.Body className="text-light" style={{backgroundColor: "#0d3878"}}>
