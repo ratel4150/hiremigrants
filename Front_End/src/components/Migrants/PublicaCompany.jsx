@@ -1,4 +1,5 @@
 import React from "react";
+import Button from 'react-bootstrap/Button';
 
 function PublicaCompany() {
   return (
@@ -22,13 +23,7 @@ function PublicaCompany() {
         </strong>
       </p>
       <div className="container d-flex justify-content-center">
-        <button
-          type="button"
-          className="btn btn-warning btn-lg rounded-pill fw-bold"
-          style={{ backgroundColor: "#FF5B00", color: "white" }}
-        >
-          Publica tu Oferta
-        </button>
+      <Button type= "button" className="btn  btn-lg rounded-pill" style={{backgroundColor:"#ff5b00",color:"white",borderColor:"#ffffff"}} a href="/formjobpost"><strong>Publica tu Oferta</strong></Button>
       </div>
       <div class="container text-center p-5">
         <div class="row align-items-start">
@@ -36,7 +31,7 @@ function PublicaCompany() {
             <button
               type="button"
               className="btn btn-warning btn-lg rounded-circle fw-bold"
-              style={{ backgroundColor: "#FF5B00", color: "white" }}
+              style={{ backgroundColor: "#FF5B00",color: "white",borderColor:"#ffffff" }}
             >
               1
             </button>
@@ -47,7 +42,7 @@ function PublicaCompany() {
             <button
               type="button"
               className="btn btn-warning btn-lg rounded-circle fw-bold"
-              style={{ backgroundColor: "#FF5B00", color: "white" }}
+              style={{ backgroundColor:"#FF5B00",color: "white",borderColor:"#ffffff" }}
             >
               2
             </button>
@@ -60,7 +55,7 @@ function PublicaCompany() {
             <button
               type="button"
               className="btn btn-warning btn-lg rounded-circle fw-bold"
-              style={{ backgroundColor: "#FF5B00", color: "white" }}
+              style={{ backgroundColor:"#FF5B00",color: "white",borderColor:"#ffffff" }}
             >
               3
             </button>

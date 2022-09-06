@@ -1,5 +1,6 @@
 import React from "react";
 import { FaSearch } from "react-icons/fa";
+import Button from 'react-bootstrap/Button';
 
 function CompanyHomePage() {
   return (
@@ -36,13 +37,7 @@ function CompanyHomePage() {
         </div>
 
         <div className="container d-flex justify-content-center">
-          <button
-            type="button"
-            className="btn btn-warning btn-lg rounded-pill fw-bold"
-            style={{ backgroundColor: "#FF5B00", color: "white" }}
-          >
-            Encontrar candidatos <FaSearch />
-          </button>
+        <Button type="button" className="btn btn-warning btn-lg rounded-pill fw-bold" style={{backgroundColor: "#FF5B00",color: "white",borderColor:"#ffffff"}} a href="/admincompany"><strong>Encontrar candidatos </strong> <FaSearch /></Button>
         </div>
       </div>
     </div>

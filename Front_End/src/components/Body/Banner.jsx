@@ -1,6 +1,7 @@
 import React from "react";
 import womanPrincipal from "../Images/woman-principal.png";
 import manPrincipal from "../Images/manprincipal.png";
+import Button from 'react-bootstrap/Button';
 // import { RiCheckboxBlankCircleFill } from "react-icons/ri";
 
 import { ImSearch } from "react-icons/im";
@@ -44,13 +45,7 @@ function Banner() {
             </strong>
           </h2>
           <div className="container d-flex justify-content-center mt-4">
-            <button
-              type="button"
-              className="btn  btn-lg rounded-pill "
-              style={{ backgroundColor: "#0d3878", color: "white", margin: "5%" }}
-            >
-              <strong>Buscar empleo</strong> <ImSearch />
-            </button>
+          <Button type= "button" className="btn  btn-lg rounded-pill" style={{backgroundColor: "#0D3878",color: "white", margin: "5%", borderColor:"#ffffff"}} a href="/adminmigrant"><strong>Buscar empleo</strong> <ImSearch /></Button>
           </div>
         </div>
         <div style={{ height: "20%" }}></div>

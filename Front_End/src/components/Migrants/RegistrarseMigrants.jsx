@@ -1,5 +1,6 @@
 import React from "react";
 import chicaRubia from "../Images/chicaRubia.png";
+import Button from 'react-bootstrap/Button';
 
 function RegistrarseMigrants() {
   return (
@@ -58,13 +59,7 @@ function RegistrarseMigrants() {
         </div>
       </div>
       <div className="container d-flex justify-content-center">
-        <button
-          type="button"
-          className="btn btn-lg rounded-pill fw-bold"
-          style={{ backgroundColor: "#0d3878", color: "white" }}
-        >
-          Registrarse
-        </button>
+      <Button type= "button" className="btn  btn-lg rounded-pill" style={{backgroundColor: "#0d3878",color: "white",borderColor:"#ffffff"}} a href="/fromprofilemigrantscv"><strong>Registrarse</strong></Button>
       </div>
     </div>
   );

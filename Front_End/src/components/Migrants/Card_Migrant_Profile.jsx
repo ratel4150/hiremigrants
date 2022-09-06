@@ -109,11 +109,11 @@ function CardMigrantProfile() {
         </div>
     </div> 
       
-    <div class="container" style={{ backgroundColor:"#ffffff", paddingTop:"2rem", paddingBottom:"2rem", backgroundPosition:"50% 50%", backgroundRepeat:"no-repeat", backgroundSize:"cover", position:"relative", wordWrap:"break-word"}}>
+    <div class="container" style={{ backgroundColor:"#ffffff", paddingTop:"2rem", paddingBottom:"2rem", backgroundPosition:"50% 50%", backgroundRepeat:"no-repeat", backgroundSize:"cover", position:"relative", wordWrap:"break-word",borderRadius:"4px"}}>
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-9" style={{ maxWidth: "100%", paddingLeft:"16px", paddingRight: "16px", flex: "0 0 auto", backgroundColor:"#ffffff" }}>
             <Button style={{ backgroundColor: "#ff5b00", borderRadius: "100px", borderColor:"#ff5b00", alignItems:"center", justifyContent:"center", display:"inline-flex", marginLeft:"20rem", marginRight:"20rem"}} 
-            a href="#!">Contact the Migrant</Button>
+            a href="#!"><strong>Contactar</strong></Button>
             </div>
         </div>
     </div>
