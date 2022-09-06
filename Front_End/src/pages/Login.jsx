@@ -4,7 +4,7 @@ import FormLogin from '../components/Forms/FormLogin'
 function Login() {
   return (
     <div>
-      <FormLogin/>
+        <FormLogin/>
     </div>
 
   )

@@ -41,7 +41,7 @@ function CardMigrant() {
           to additional content. This card has even longer content than the
           first to show that equal height action.
           </Card.Text>
-          <Button type= "button" style={{backgroundColor: "#ff5b00"}} a href="#!">View Profile</Button>
+          <Button type= "button" className="btn  btn-lg rounded-pill" style={{backgroundColor: "#ff5b00",color: "white",borderColor:"#ffffff"}} a href="/profilemigrant"><strong>Ver Perfil</strong></Button>
         </Card.Body>
       </Card>
       <Card border="light" style={{ width: '25rem' }}>
@@ -57,7 +57,7 @@ function CardMigrant() {
           to additional content. This card has even longer content than the
           first to show that equal height action.
           </Card.Text>
-          <Button type= "button" style={{backgroundColor: "#ff5b00"}} a href="#!">View Profile</Button>
+          <Button type= "button" className="btn  btn-lg rounded-pill" style={{backgroundColor: "#ff5b00",color: "white",borderColor:"#ffffff"}} a href="/profilemigrant"><strong>Ver Perfil</strong></Button>
         </Card.Body>
       </Card>
       <Card border="light" style={{ width: '25rem' }}>
@@ -73,7 +73,7 @@ function CardMigrant() {
           to additional content. This card has even longer content than the
           first to show that equal height action.
           </Card.Text>
-          <Button type= "button" style={{backgroundColor: "#ff5b00"}} a href="#!">View Profile</Button>
+          <Button type= "button" className="btn  btn-lg rounded-pill" style={{backgroundColor: "#ff5b00",color: "white",borderColor:"#ffffff"}} a href="/profilemigrant"><strong>Ver Perfil</strong></Button>
         </Card.Body>
       </Card>
       </Row>

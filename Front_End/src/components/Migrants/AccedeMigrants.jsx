@@ -5,7 +5,7 @@ function AccedeMigrants () {
     <div
       className="container-fluid text-white text-center p-3"
       style={{
-        backgroundColor: "#0d3878",
+        backgroundColor: "#fbc63a",
       }}
     >
       <div className="container-fluid text-white justify-content-center">
@@ -21,7 +21,7 @@ function AccedeMigrants () {
       </div>
       <div>
         <p className="display-6 d-flex justify-content-center fw">
-        Hoy hay 7.485 empresas contratando con las mejores vacantes para ti
+        <strong>Hoy hay 7.485 empresas contratando con las mejores vacantes para ti</strong>
         </p>
       </div>
       <div

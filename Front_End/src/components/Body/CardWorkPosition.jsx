@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from 'react-bootstrap/Button';
 import { MdPlace } from "react-icons/md";
 import {SiCashapp} from 'react-icons/si'
 import {BsFillBookmarkFill} from 'react-icons/bs'
@@ -26,6 +27,7 @@ function CardWorkPosition() {
             </p>
             <p  style={{ color: "gray" }}><SiCashapp/> Negotiable</p>
             <p><strong>3 days ago</strong></p>
+            <Button type= "button" className="btn  btn-lg rounded-pill" style={{backgroundColor: "#0D3878",color: "white",borderColor:"#ffffff"}} a href="/jobpost"><strong>Postularme</strong></Button>
             <div className="" style={{width:'100px',position:'absolute',bottom:'20px' ,left:'270px'}}>
                 <img className="mx-auto d-block" src={Logo} alt="logo"  width={64} heigth={64}/>
                 <p className=" lh-1" style={{position:'block'}}><strong>HireMigrants</strong></p>

@@ -1,4 +1,5 @@
 import React from "react";
+import Button from 'react-bootstrap/Button';
 
 function RegistrarseCompany() {
   return (
@@ -46,13 +47,7 @@ function RegistrarseCompany() {
         </p>
       </div>
       <div className="container d-flex justify-content-center">
-        <button
-          type="button"
-          className="btn btn-warning btn-lg rounded-pill fw-bold"
-          style={{ backgroundColor: "#FF5B00", color: "white" }}
-        >
-          Registrarse
-        </button>
+      <Button type= "button" className="btn  btn-lg rounded-pill" style={{backgroundColor: "#ff5b00",color: "white",borderColor:"#ffffff"}} a href="/formprofilecompany"><strong>Registrarse</strong></Button>
       </div>
     </div>
   );

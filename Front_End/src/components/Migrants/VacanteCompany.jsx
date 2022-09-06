@@ -10,12 +10,12 @@ function VacanteCompany() {
         </h1>
       </div>
       <div className="text-white" style={{
-        backgroundColor: "#369962",
+        backgroundColor: "#369962", borderRadius:"4px",
       }}
       >
         <h3>Nombre de la empresa</h3>
             <h5>Jornada</h5>
-            <h5>Remoto o Prsencial</h5>
+            <h5>Remoto o Presencial</h5>
             <h5>Fecha Publicación</h5>
         <Card className="text-black mx-5">
           <h3 className="p-2">Descripción del trabajo</h3>
