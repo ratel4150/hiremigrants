@@ -4,14 +4,13 @@ import BannerWorkPosition from '../components/Body/BannerWorkPosition'
 import RegistrarseMigrants from '../components/Migrants/RegistrarseMigrants'
 import AccedeMigrants from '../components/Migrants/AccedeMigrants'
 
-
 function Migrants() {
   return (
     <div>
-      <BannerMigrants/>
-      <BannerWorkPosition/>
-      <RegistrarseMigrants/>
-      <AccedeMigrants/>
+        <BannerMigrants/>
+        <BannerWorkPosition/>
+        <RegistrarseMigrants/>
+        <AccedeMigrants/>
     </div>
   )
 }

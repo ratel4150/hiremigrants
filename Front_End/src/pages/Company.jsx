@@ -5,8 +5,6 @@ import PublicaCompany from '../components/Migrants/PublicaCompany'
 import RegistrarseCompany from '../components/Migrants/RegistrarseCompany'
 import AccedeCompany from '../components/Migrants/AccedeCompany'
 
-
-
 function Company() {
   return (
     <div>
