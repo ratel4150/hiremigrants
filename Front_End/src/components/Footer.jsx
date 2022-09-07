@@ -14,15 +14,15 @@ function Footer() {
       <div class="btn-group p-3" role="group" aria-label="Basic example">
       <Nav.Link as={Link} to='/migrants' style={{ fontFamily: "Roboto" }}>
   <button type="button" class="btn text-white" style={{
-      backgroundColor: "#369962"}}>Migrants</button>
+      backgroundColor: "#369962"}}>Migrante</button>
       </Nav.Link>
       <Nav.Link as={Link} to='/company' style={{ fontFamily: "Roboto" }}>
   <button type="button" class="btn text-white" style={{
-      backgroundColor: "#369962"}}>Company</button>
+      backgroundColor: "#369962"}}>Compañia</button>
       </Nav.Link>
       <Nav.Link as={Link} to='/login' style={{ fontFamily: "Roboto" }}>
   <button type="button" class="btn text-white" style={{
-      backgroundColor: "#369962"}}>Login</button>
+      backgroundColor: "#369962"}}>LogIn</button>
       </Nav.Link>
 </div>
       <div>
