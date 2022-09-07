@@ -8,13 +8,18 @@ import Company from "./pages/Company";
 import FormProfileCompany from "./pages/FormProfileCompany";
 import AdminCompany from "./pages/AdminCompany";
 import AdminMigrant from "./pages/AdminMigrant";
-import FormJobPost from "./pages/FormJobPost";
+import FormJobPost from "../src/components/Forms/FormJobPost";
 import FromProfileMigrantsCv from "./pages/FromProfileMigrantsCv";
 import JobPost from "./pages/JobPost";
 import ProfileMigrant from "./pages/ProfileMigrant";
 import SingUpCompany from "./pages/SingUpCompany";
 import SingUpMigrants from "./pages/SingUpMigrants";
 import Login from "./pages/Login";
+import FormBusinessStream from "./components/Forms/FormBusinessStream";
+import FormCompanyImages from "./components/Forms/FormCompanyImages";
+import FormCompany from "./components/Forms/FormCompany";
+import FormJobLocation from "./components/Forms/FormJobLocation";
+import FormJobType from "./components/Forms/FormJobType";
 
 function App() {
   return (
@@ -37,6 +42,12 @@ function App() {
         <Route path="/profilemigrant" element={<ProfileMigrant />} />
         <Route path="/singupcompany" element={<SingUpCompany />} />
         <Route path="/singupmigrants" element={<SingUpMigrants />} />
+        <Route path="/business-stream" element={<FormBusinessStream/>} />
+        <Route path="/company-image-register" element={<FormCompanyImages/>}/>
+        <Route path="/company-register" element={<FormCompany/>}/>
+        <Route path="/record-job-locations" element={<FormJobLocation/>}/>
+        <Route path="/record-job-type" element={<FormJobType/>}/>
+        <Route path="/record-job-post" element={<FormJobPost/>}/>
                        
       </Routes>
       <Footer/>

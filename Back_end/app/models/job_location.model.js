@@ -11,10 +11,10 @@ module.exports = (sequelize, Sequelize) => {
       type: Sequelize.STRING,
     },
     city: {
-      type: Sequelize.INTEGER,
+      type: Sequelize.STRING,
     },
     zip: {
-      type: Sequelize.DATE,
+      type: Sequelize.STRING,
     },
    
   });
