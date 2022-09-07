@@ -30,9 +30,9 @@ function Footer() {
           src="https://migracode.openculturalcenter.org/wp-content/uploads/2020/10/Migracode-Barcelona-Logo-Transparant.png"
           style={{ width: "120px" }}
         />
-        <div className="p-2">Migracode Project 2022</div>
+        <div className="p-2">Migracode Proyecto 2022</div>
         <div className="p-2">
-          Produced by Vanessa Marin - Joao Albitrez - Yhenifer Pulido - Arturo Chavez -
+          Elaborado por Vanessa Marin - Joao Albitrez - Yhenifer Pulido - Arturo Chavez -
           Jorgelina Donquis.
         </div>
          < FaFacebookSquare size={25} style={{marginLeft: "10"}}/>
