@@ -17,7 +17,7 @@ module.exports = (sequelize, Sequelize) => {
       type: Sequelize.DATE,
     },
     is_active: {
-      type: Sequelize.CHAR,
+      type: Sequelize.STRING,
     },
   });
   return JobPost;

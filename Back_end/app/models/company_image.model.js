@@ -6,7 +6,7 @@ module.exports = (sequelize, Sequelize) => {
     },
  
     company_image: {
-      type: Sequelize.BLOB,
+      type: Sequelize.STRING,
     },
   });
   return CompanyImage;

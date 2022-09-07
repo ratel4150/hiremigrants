@@ -1,86 +1,141 @@
-import React from "react";
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import InputGroup from 'react-bootstrap/InputGroup';
+import React , { useState } from 'react';
+
+import { Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import InputGroup from "react-bootstrap/InputGroup";
+
+function FormCompany() {
+
   
-  function FormCompany() {
-    return (
-<div class="container  ">
-    <div class="text-center ">
-            <h2 class=""><strong>Crea tu perfil de Empresa</strong></h2>
-            <h4><strong>Accede a cientos de personas que buscan trabajo y encuentra tu empleado ideal.</strong></h4>
-    </div >
-    <div class="container row justify-content-center mt-4 ">
-      <Form >
-      <InputGroup className="mb-3">
-        <InputGroup.Text id="basic-addon1">Nombre de la compañia</InputGroup.Text>
-        <Form.Control
-          placeholder=""
-          aria-label="Username"
-          aria-describedby="basic-addon1"
-        />
-      </InputGroup>
+  const [id, setID] = useState("");
+  const [name, setName] = useState("");
+  const [description, setDescription] = useState("");
+  const [date, setDate] = useState("");
+  const [contact, setContact] = useState("");
+  const [url, setUrl] = useState("");
+  
+  const [createdAt, setCreatedAT] = useState("");
+  const [updatedAt, setUpdatedAT] = useState("");
+  const [business, setBusiness] = useState("");
 
-      <InputGroup>
-        <InputGroup.Text>Descripcion </InputGroup.Text>
-        <Form.Control as="textarea" aria-label="With textarea" />
-      </InputGroup>
+  
 
-      <Form.Label htmlFor="basic-url"> Seleccione el sector economico al  que  pertenece </Form.Label>
-      <Form.Select aria-label="Default select example">
-        <option>Sector</option>
-        <option value="1">Administracion pública</option>
-        <option value="2">Aeronautica</option>
-        <option value="3">Agricultura/Ganaderia</option>
-        <option value="4">Alimentación</option>
-        <option value="5">Arte/cultura/Deporte</option>
-        <option value="6">Audivisualesa</option>
-        <option value="7">Automoción</option>
-        <option value="8">Banca/Seguros</option>
-        <option value="9">Contact Center</option>
-        <option value="10">Educación/Formación</option>
-        <option value="11">Farma/Quimica</option>
-        <option value="12">Healthcare</option>
-        <option value="13">Hostelería/Turismo</option>
-        <option value="14">Industria</option>
-        <option value="15">Informática y Telecomunicaciones</option>
-        <option value="16">Construción e Inmobiliaria</option>
-        <option value="17">Marketing y Comunicación</option>
-        <option value="18">Retail / Distribución</option>
-        <option value="19">Transporte y Logística</option>
-        <option value="20">RRHH</option>
-        <option value="21">Otros</option>
-    
-      </Form.Select>
 
-      <Form.Label htmlFor="basic-url">Pagina web de la compañia </Form.Label>
-      <InputGroup className="mb-3">
-        <InputGroup.Text id="basic-addon3">
-          https://
-        </InputGroup.Text>
-        <Form.Control id="basic-url" aria-describedby="basic-addon3" />
-      </InputGroup>
+  function handleIdChange(event) {
+    console.log(event);
+    if (event.target.name === "id") {
+        setID(event.target.value);
+      } else if (event.target.name === "name") {
+        setName(event.target.value);
+      } else if (event.target.name === "description") {
+        setDescription(event.target.value);
+        
+      }else if (event.target.name === "date") {
+        setDate(event.target.value);
+        
+        
+        
+      }
+      else if (event.target.name === "contact") {
+        setContact(event.target.value);
+        
+      }
+      else if (event.target.name === "url") {
+        setUrl(event.target.value);
+        
+      }
+      
+       else if (event.target.name === "createdAt") {
+        setCreatedAT(event.target.value);
+      }
+      else if (event.target.name === "updatedAt") {
+        setUpdatedAT(event.target.value);
+      }
+      else if (event.target.name === "option") {
+        setBusiness(event.target.value)
+        
+      }
 
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Acepta las condiciones " />
-      </Form.Group>
+    }
 
-        <Button variant="primary" type="submit">
-          Crear Perfil 
-        </Button>
-      </Form>
+    function handleSubmit(event) {
+      event.preventDefault();
+  
+      console.log("Sending data to server");
+  
+      fetch("http://localhost:8080/company-register", {
+        method: "POST",
+        body: JSON.stringify({
+          newIdCompany:id,
+          name:name,
+          description:description,
+          date:date,
+          contact:contact,
+           url:url,
+           createdAt:createdAt,
+           updatedAt:updatedAt,
+           business:business
+        }),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      });
+    }
+
+    console.log(business)
+    console.log(name);
+  return (
+    <div className="container  ">
+      <div className="text-center ">
+        <h2 className="">
+          <strong>Crea tu perfil de Empresa</strong>
+        </h2>
+        <h4>
+          <strong>
+            Accede a cientos de personas que buscan trabajo y encuentra tu
+            empleado ideal.
+          </strong>
+        </h4>
       </div>
-</div>
-    );
-  }
+      <div className="container row justify-content-center m-4 ">
+
+
+        <form onSubmit={handleSubmit}  style={{display:"block"}}>
+        <label className="form-label"     style={{display:"block"}}  htmlFor="">Id:</label>
+          <input className="form-control"    style={{display:"block"}} type="text" name="id" id="id"  value={id}  onChange={handleIdChange}/>
+          <label className="form-label"     style={{display:"block"}}  htmlFor="">Nombre de compañia:</label>
+          <input className="form-control"    style={{display:"block"}} type="text" name="name" id="name"  value={name}  onChange={handleIdChange}/>
+          <label  className="form-label"   style={{display:"block"}} htmlFor="description">Descripcion de la compañia:</label>
+          <textarea className="form-control"    style={{display:"block"}} name="description" id="description" cols="30" rows="10" value={description}  onChange={handleIdChange}></textarea>
+          <label className="form-label"    style={{display:"block"}} htmlFor="date">Fecha de creacion:</label>
+          <input  className="form-control"   style={{display:"block"}} type="date" name="date" id="date" value={date}  onChange={handleIdChange} />
+          <label className="form-label"    style={{display:"block"}} htmlFor="contact">Numero de Contacto:</label>
+          <input  className="form-control"   style={{display:"block"}} type="text" name="contact" id="contact"  value={contact}  onChange={handleIdChange}/>
+          <label  className="form-label"   style={{display:"block"}} htmlFor="url">Url de la empresa:</label>
+          <input  className="form-control"   style={{display:"block"}} type="url" name="url" id="url"  value={url}  onChange={handleIdChange}/>
+          <label className="form-label"     style={{display:"block"}}  htmlFor="">creado:</label>
+          <input className="form-control"    style={{display:"block"}} type="date" name="createdAt" id="createdAt" value={createdAt} onChange={handleIdChange} />
+          <label className="form-label"     style={{display:"block"}}  htmlFor="">actualizado:</label>
+          <input className="form-control"    style={{display:"block"}} type="date" name="updatedAt" id="updatedAt" value={updatedAt} onChange={handleIdChange} />
+          <select className="form-select m-2" name='option' id='option'   value={business} onChange={handleIdChange} >
+  <option value="1">1</option>
+  <option value="2">2</option>
   
-  export default FormCompany;  
+</select>
+          
+
+          <button  className='btn btn-primary m-2 bt'><Link style={{color:"white",textDecoration:"none"}} to="">Enviar Datos</Link></button>
 
 
 
+        </form>
+     
+      </div>
+    </div>
+  );
+}
 
-
-
-
+export default FormCompany;
