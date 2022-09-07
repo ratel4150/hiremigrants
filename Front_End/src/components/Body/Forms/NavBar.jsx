@@ -50,7 +50,7 @@ function NavBar() {
                   className="btn btn-primary d-inline-flex btn-lg rounded-pill"
                   style={{ backgroundColor: "#0D3878" }}
                 >
-                  Migrants <ImUserTie size={24} />
+                  Migrante <ImUserTie size={24} />
                 </button>
               </Nav.Link>
               <Nav.Link as={Link} to="company" style={{ fontFamily: "Roboto" }}>
@@ -59,7 +59,7 @@ function NavBar() {
                   className="btn btn-warning d-inline-flex btn-lg rounded-pill text-white"
                   style={{ backgroundColor: "#FF5B00" }}
                 >
-                  Company <RiBuilding2Fill size={24} />
+                  Compañia <RiBuilding2Fill size={24} />
                 </button>
               </Nav.Link>
               <Nav.Link as={Link} to="login" style={{ fontFamily: "Roboto" }}>
